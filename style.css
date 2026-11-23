@@ -1,0 +1,319 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+:root {
+    --ink: #20251f;
+    --green: #163b32;
+    --gold: #f2bd55;
+    --cream: #fffaf0;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Poppins, Arial, sans-serif;
+    color: var(--ink);
+    line-height: 1.7;
+}
+
+
+.navbar {
+    background: #102d27eF;
+    padding: 14px 0;
+}
+
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+
+.navbar-brand span {
+    color: var(--gold);
+}
+
+
+.nav-link {
+    margin-left: 14px;
+}
+
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--gold) !important;
+}
+
+
+.hero {
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background: linear-gradient(90deg, rgba(9,35,29,.94), rgba(9,35,29,.45)), linear-gradient(135deg, #28594a, #bd8846 55%, #203e34);
+    padding: 130px 0 70px;
+}
+
+
+.hero-content {
+    max-width: 760px;
+}
+
+
+.hero h1,
+.page-hero h1 {
+    font-size: clamp(2.7rem, 7vw, 5.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+
+.hero h1 span {
+    color: var(--gold);
+}
+
+
+.lead {
+    max-width: 600px;
+}
+
+
+.eyebrow {
+    color: #b67a27;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: .78rem;
+}
+
+
+.hero .eyebrow {
+    color: var(--gold);
+}
+
+
+.section-pad {
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+
+.section-title {
+    font-weight: 800;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+
+.intro {
+    max-width: 760px;
+    color: #68716b;
+}
+
+
+.feature-card,
+.food-card,
+.info-card {
+    height: 100%;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px #18251d12;
+    overflow: hidden;
+    transition: .25s;
+}
+
+
+.feature-card {
+    padding: 32px 24px;
+}
+
+
+.feature-card:hover,
+.food-card:hover,
+.info-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 16px 40px #18251d20;
+}
+
+
+.feature-icon,
+.food-emoji {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+
+.feature-card h3,
+.food-card h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+.feature-card a {
+    color: #9a641e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.quote-band {
+    background: var(--green);
+    color: white;
+    padding: 65px 15px;
+}
+
+
+.quote-band h2 {
+    font-weight: 700;
+}
+
+
+.quote-band p {
+    color: var(--gold);
+}
+
+
+footer {
+    background: #10251f;
+    color: #dce5df;
+    padding: 22px 0;
+    font-size: .85rem;
+}
+
+
+.page-hero {
+    padding: 170px 0 75px;
+    color: white;
+    background: linear-gradient(110deg, #12382f, #567a58);
+}
+
+
+.page-hero p:last-child {
+    font-size: 1.1rem;
+}
+
+
+.places-hero {
+    background: linear-gradient(110deg, #12382f, #987449);
+}
+
+
+.food-hero {
+    background: linear-gradient(110deg, #492b1d, #b66c36);
+}
+
+
+.culture-hero {
+    background: linear-gradient(110deg, #34234c, #986d44);
+}
+
+
+.card-art {
+    height: 155px;
+    display: grid;
+    place-items: center;
+    font-size: 5rem;
+    background: linear-gradient(135deg, #d8e4d7, #f6dca7);
+}
+
+
+.art-palace {
+    background: linear-gradient(135deg, #e7d4b4, #b78c5a);
+}
+
+
+.art-market {
+    background: linear-gradient(135deg, #d8e4d7, #b4c9a5);
+}
+
+
+.art-nature {
+    background: linear-gradient(135deg, #c5dfca, #f1e5bd);
+}
+
+
+.info-card h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+
+.info-card p,
+.food-card p {
+    color: #68716b;
+}
+
+
+.tag {
+    display: inline-block;
+    background: #f8edda;
+    color: #86591e;
+    padding: 5px 12px;
+    border-radius: 30px;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+
+.food-card {
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #f0eee7;
+}
+
+
+.food-emoji {
+    background: var(--cream);
+    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 20px;
+}
+
+
+.culture-panel {
+    background: var(--cream);
+    padding: 35px;
+    border-radius: 20px;
+}
+
+
+.culture-panel > div {
+    font-size: 2rem;
+}
+
+
+.culture-panel h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+
+.culture-panel p {
+    color: #68716b;
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 767px) {
+
+    .hero {
+        min-height: 620px;
+    }
+
+    .section-pad {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+}
